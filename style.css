@@ -127,7 +127,7 @@ body{
 .accordance li{
     list-style: none;
     width: 100%;
-    padding: 5px;
+    padding-bottom: 5px;
 }
 .accordance li label{
     display: flex;
@@ -189,10 +189,56 @@ input[type="radio"]{
     margin-top: 30px;
     color: #6e6e6e;
 }
-@media (max-width:768px){
+@media (max-width:1000px){
     .foot{
         flex-direction: column;
         gap: 2rem
         ;
     }
+}
+@media only screen and (max-width :600px){
+    .navbar img{
+        height: 35px;
+    }
+    .language{
+        padding: 4px 8px;
+    }
+    .signin{
+        padding: 4px 8px;
+    }
+    .navbar .btn{
+        gap: 5px;
+    }
+    .header h1{
+        font-size: 33px ;
+    }
+    .header h3{
+        font-size: 16px;
+    }
+    .email{
+        width:19rem;
+    }
+    .btn-started{
+        margin-top: 10px;
+        padding: 10px 15px;
+    }
+    .faq{
+        padding: 10px 2rem;
+
+    }
+    .faq h3{
+        font-size: medium;
+    }
+    .faq h2{
+        font-size: 23px;
+    }
+    .accordance .context{
+        font-size: 14px;
+    }
+    .accordance input[type="radio"]:checked + label + .context{
+        min-height: 172px;
+    }
+    .label::after{{
+        font-size: 30px;
+    }}
 }
