@@ -238,7 +238,7 @@ input[type="radio"]{
     .accordance input[type="radio"]:checked + label + .context{
         min-height: 172px;
     }
-    .label::after{{
+    .label::after{
         font-size: 30px;
-    }}
+    }
 }
